@@ -12,7 +12,7 @@ class Text{
     }
 
     event(events: any) {
-
+        
         this.text.onclick = _ => () => {
             console.log(111)
         }
