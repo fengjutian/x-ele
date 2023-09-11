@@ -8,7 +8,7 @@ import Text from './elements/Text.ts'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
   ${
-    new Text().init('Hello World').style({
+    new Text('Hello World').style({
       style: {
         color: "red"
       },
@@ -18,7 +18,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     }).render()
   }
   ${
-    new Text().init('Hello World').style({
+    new Text('Hello World').style({
       style: {
         color: "red"
       },
