@@ -5,6 +5,12 @@ class Div{
         this.div.innerText = data
     }
 
+
+    mixEle(data: string) {
+
+        return this
+    }
+
     render() {
         return this.div.outerHTML
     }

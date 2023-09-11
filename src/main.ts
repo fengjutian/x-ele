@@ -3,10 +3,11 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 import View from './View.ts'
-import Text from './widgets/Text.ts'
-import Div from './widgets/Div.ts'
+
+import { Text, Div } from './widgets/index.ts'
 
 const divWidget =  new Div("我是div").render()
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
