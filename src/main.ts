@@ -8,16 +8,16 @@ import { Text, Div } from './widgets/index.ts'
 
 const divWidget =  new Div("我是div").render()
 
-
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
   ${ divWidget }
   ${
     new Text('Hello World').style({
       style: {
-        color: "red"
+        color: "red",
+        fontSize: '10px'
       },
-      class: []
+      class: ['hello', 'world']
     }).event({
       onClick: () => { console.log('click')}
     }).render()
@@ -39,4 +39,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
