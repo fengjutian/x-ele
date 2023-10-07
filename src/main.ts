@@ -2,14 +2,18 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
-import View from './View.ts'
+import View from './View.ts';
+
 
 import { Text, Div } from './widgets/index.ts'
 
 const divWidget =  new Div("我是div").render()
 
+let eleComp = ['divWidget']
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
+  ${ View.render(eleComp) }
   ${ divWidget }
   ${
     new Text('Hello World').style({
